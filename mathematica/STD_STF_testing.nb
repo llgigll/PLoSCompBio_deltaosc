@@ -1,0 +1,93 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      2402,         83]
+NotebookOptionsPosition[      2128,         69]
+NotebookOutlinePosition[      2466,         84]
+CellTagsIndexPosition[      2423,         81]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"equation", " ", "=", " ", 
+    RowBox[{
+     FractionBox[
+      RowBox[{"1", "+", 
+       RowBox[{"R", " ", 
+        SubscriptBox["t", "af"]}]}], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["R", "2"], " ", 
+        SubscriptBox["t", "af"], " ", 
+        SubscriptBox["t", "ar"]}], "+", 
+       RowBox[{"R", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["t", "af"], "+", 
+          SubscriptBox["t", "ar"]}], ")"}]}], "+", 
+       FractionBox["1", 
+        SubscriptBox["U", "a"]]}]], "-", 
+     FractionBox[
+      RowBox[{"1", "+", 
+       RowBox[{"R", " ", 
+        SubscriptBox["t", "bf"]}]}], 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["R", "2"], " ", 
+        SubscriptBox["t", "bf"], " ", 
+        SubscriptBox["t", "br"]}], "+", 
+       RowBox[{"R", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["t", "bf"], "+", 
+          SubscriptBox["t", "br"]}], ")"}]}], "+", 
+       FractionBox["1", 
+        SubscriptBox["U", "b"]]}]]}]}], ";", " ", 
+   RowBox[{"var", " ", "=", " ", 
+    RowBox[{"{", "R", "}"}]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.658507260734069*^9, 3.658507263027287*^9}, {
+  3.658507306191793*^9, 3.6585073596977663`*^9}, {3.658507482834165*^9, 
+  3.65850756988913*^9}, {3.658507860524878*^9, 3.658507889011231*^9}}],
+
+Cell[BoxData[
+ RowBox[{"Collect", "[", 
+  RowBox[{"equation", ",", "var"}], "]"}]], "Input",
+ CellChangeTimes->{{3.65850789384809*^9, 3.658507900430561*^9}}]
+},
+WindowSize->{1418, 873},
+WindowMargins->{{42, Automatic}, {-33, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 1407, 42, 121, "Input"],
+Cell[1967, 64, 157, 3, 32, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
+

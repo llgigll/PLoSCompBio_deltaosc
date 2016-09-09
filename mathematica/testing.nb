@@ -1,0 +1,1740 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     58186,       1731]
+NotebookOptionsPosition[     57174,       1691]
+NotebookOutlinePosition[     57510,       1706]
+CellTagsIndexPosition[     57467,       1703]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Collect", "[", 
+  RowBox[{
+   RowBox[{"CharacteristicPolynomial", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          SubscriptBox["\[Tau]", "e"]}], ",", "0", ",", 
+         RowBox[{
+          SubscriptBox["J", "ee"], "/", 
+          SubscriptBox["\[Tau]", "e"]}], ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", 
+           SubscriptBox["J", "ei"]}], "/", 
+          SubscriptBox["\[Tau]", "e"]}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          SubscriptBox["\[Tau]", "i"]}], ",", "0", ",", 
+         RowBox[{
+          SubscriptBox["J", "ie"], "/", 
+          SubscriptBox["\[Tau]", "i"]}], ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", 
+           SubscriptBox["J", "ii"]}], "/", 
+          SubscriptBox["\[Tau]", "i"]}]}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", "/", 
+          SubscriptBox["\[Tau]", "ee"]}], ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          SubscriptBox["\[Tau]", "ee"]}], ",", "0", ",", "0", ",", "0"}], 
+        "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", "/", 
+          SubscriptBox["\[Tau]", "ie"]}], ",", "0", ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          SubscriptBox["\[Tau]", "ie"]}], ",", "0", ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         RowBox[{"1", "/", 
+          SubscriptBox["\[Tau]", "ei"]}], ",", "0", ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          SubscriptBox["\[Tau]", "ei"]}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", 
+         RowBox[{"1", "/", 
+          SubscriptBox["\[Tau]", "ii"]}], ",", "0", ",", "0", ",", "0", ",", 
+         RowBox[{
+          RowBox[{"-", "1"}], "/", 
+          SubscriptBox["\[Tau]", "ii"]}]}], "}"}]}], "}"}], ",", "x"}], "]"}],
+    ",", "x"}], "]"}]], "Input",
+ CellChangeTimes->{{3.60313424740412*^9, 3.6031342575653133`*^9}, {
+  3.603134386474448*^9, 3.603134391158411*^9}, {3.603134878438407*^9, 
+  3.603134890940647*^9}, {3.603134981515934*^9, 3.60313499203986*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  SuperscriptBox["x", "6"], "+", 
+  RowBox[{
+   SuperscriptBox["x", "5"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "e"]], "+", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "ee"]], "+", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "ei"]], "+", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "i"]], "+", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "ie"]], "+", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "ii"]]}], ")"}]}], "+", 
+  RowBox[{
+   SuperscriptBox["x", "4"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]]}], ")"}]}], "+", 
+  RowBox[{
+   SuperscriptBox["x", "3"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]]}], ")"}]}], "+", 
+  RowBox[{
+   SuperscriptBox["x", "2"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "ei"], " ", 
+       SubscriptBox["J", "ie"]}], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "ee"], " ", 
+       SubscriptBox["J", "ii"]}], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]]}], ")"}]}], "+", 
+  RowBox[{"x", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "ei"], " ", 
+       SubscriptBox["J", "ie"]}], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "ee"], " ", 
+       SubscriptBox["J", "ii"]}], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      SubscriptBox["J", "ee"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "-", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "ee"], " ", 
+       SubscriptBox["J", "ii"]}], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "ei"], " ", 
+       SubscriptBox["J", "ie"]}], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "e"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox["1", 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]], "+", 
+     FractionBox[
+      SubscriptBox["J", "ii"], 
+      RowBox[{
+       SubscriptBox["\[Tau]", "ee"], " ", 
+       SubscriptBox["\[Tau]", "ei"], " ", 
+       SubscriptBox["\[Tau]", "i"], " ", 
+       SubscriptBox["\[Tau]", "ie"], " ", 
+       SubscriptBox["\[Tau]", "ii"]}]]}], ")"}]}], "+", 
+  FractionBox["1", 
+   RowBox[{
+    SubscriptBox["\[Tau]", "e"], " ", 
+    SubscriptBox["\[Tau]", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ei"], " ", 
+    SubscriptBox["\[Tau]", "i"], " ", 
+    SubscriptBox["\[Tau]", "ie"], " ", 
+    SubscriptBox["\[Tau]", "ii"]}]], "-", 
+  FractionBox[
+   SubscriptBox["J", "ee"], 
+   RowBox[{
+    SubscriptBox["\[Tau]", "e"], " ", 
+    SubscriptBox["\[Tau]", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ei"], " ", 
+    SubscriptBox["\[Tau]", "i"], " ", 
+    SubscriptBox["\[Tau]", "ie"], " ", 
+    SubscriptBox["\[Tau]", "ii"]}]], "+", 
+  FractionBox[
+   RowBox[{
+    SubscriptBox["J", "ei"], " ", 
+    SubscriptBox["J", "ie"]}], 
+   RowBox[{
+    SubscriptBox["\[Tau]", "e"], " ", 
+    SubscriptBox["\[Tau]", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ei"], " ", 
+    SubscriptBox["\[Tau]", "i"], " ", 
+    SubscriptBox["\[Tau]", "ie"], " ", 
+    SubscriptBox["\[Tau]", "ii"]}]], "+", 
+  FractionBox[
+   SubscriptBox["J", "ii"], 
+   RowBox[{
+    SubscriptBox["\[Tau]", "e"], " ", 
+    SubscriptBox["\[Tau]", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ei"], " ", 
+    SubscriptBox["\[Tau]", "i"], " ", 
+    SubscriptBox["\[Tau]", "ie"], " ", 
+    SubscriptBox["\[Tau]", "ii"]}]], "-", 
+  FractionBox[
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["J", "ii"]}], 
+   RowBox[{
+    SubscriptBox["\[Tau]", "e"], " ", 
+    SubscriptBox["\[Tau]", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ei"], " ", 
+    SubscriptBox["\[Tau]", "i"], " ", 
+    SubscriptBox["\[Tau]", "ie"], " ", 
+    SubscriptBox["\[Tau]", "ii"]}]]}]], "Output",
+ CellChangeTimes->{
+  3.603134258988001*^9, 3.6031343920964537`*^9, {3.603134882580042*^9, 
+   3.603134891889964*^9}, 3.603134993276087*^9, 3.6032179169209337`*^9, 
+   3.603218407199194*^9, {3.603218671527461*^9, 3.603218706616935*^9}, 
+   3.603218740610177*^9, 3.6032188620439377`*^9, 3.6032190949821997`*^9, 
+   3.603219294504375*^9, {3.603219356581985*^9, 3.603219374703244*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"a", " ", "=", " ", 
+  RowBox[{"CoefficientList", "[", 
+   RowBox[{
+    RowBox[{"Out", "[", "10", "]"}], ",", "x"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.603205853117104*^9, 3.603205858029787*^9}, {
+  3.603206202779697*^9, 3.603206211874984*^9}, {3.6032063043039007`*^9, 
+  3.603206305949757*^9}, {3.603211140455262*^9, 3.6032111922432423`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ei"], " ", 
+      SubscriptBox["J", "ie"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ee"], " ", 
+      SubscriptBox["J", "ii"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]]}], ",", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ei"], " ", 
+      SubscriptBox["J", "ie"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ee"], " ", 
+      SubscriptBox["J", "ii"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ee"], " ", 
+      SubscriptBox["J", "ii"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ei"], " ", 
+      SubscriptBox["J", "ie"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]]}], ",", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ei"], " ", 
+      SubscriptBox["J", "ie"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     RowBox[{
+      SubscriptBox["J", "ee"], " ", 
+      SubscriptBox["J", "ii"]}], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]]}], ",", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]]}], ",", 
+   RowBox[{
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"]}]], "-", 
+    FractionBox[
+     SubscriptBox["J", "ee"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ee"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ei"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ei"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "i"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ie"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "e"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ee"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ei"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox[
+     SubscriptBox["J", "ii"], 
+     RowBox[{
+      SubscriptBox["\[Tau]", "i"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]], "+", 
+    FractionBox["1", 
+     RowBox[{
+      SubscriptBox["\[Tau]", "ie"], " ", 
+      SubscriptBox["\[Tau]", "ii"]}]]}], ",", 
+   RowBox[{
+    FractionBox["1", 
+     SubscriptBox["\[Tau]", "e"]], "+", 
+    FractionBox["1", 
+     SubscriptBox["\[Tau]", "ee"]], "+", 
+    FractionBox["1", 
+     SubscriptBox["\[Tau]", "ei"]], "+", 
+    FractionBox["1", 
+     SubscriptBox["\[Tau]", "i"]], "+", 
+    FractionBox["1", 
+     SubscriptBox["\[Tau]", "ie"]], "+", 
+    FractionBox["1", 
+     SubscriptBox["\[Tau]", "ii"]]}], ",", "1"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.60321119267826*^9, 3.6032179172312202`*^9, 3.603218407561573*^9, {
+   3.603218671866075*^9, 3.6032187069314833`*^9}, 3.603218740866416*^9, 
+   3.6032188624894323`*^9, 3.6032190952941303`*^9, 3.603219294808058*^9, {
+   3.603219356921224*^9, 3.6032193750385237`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"l", " ", "=", " ", 
+  RowBox[{"Together", "[", 
+   RowBox[{
+    RowBox[{"a", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], "/", 
+    RowBox[{"a", "[", 
+     RowBox[{"[", "1", "]"}], "]"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.603206315001383*^9, 3.603206326296425*^9}, {
+  3.603206363213585*^9, 3.6032063929293747`*^9}, {3.603206506981223*^9, 
+  3.603206573060953*^9}, {3.603219277820953*^9, 3.603219278970564*^9}}],
+
+Cell[BoxData[
+ FractionBox[
+  RowBox[{
+   RowBox[{"-", 
+    SubscriptBox["\[Tau]", "e"]}], "-", 
+   RowBox[{
+    SubscriptBox["J", "ii"], " ", 
+    SubscriptBox["\[Tau]", "e"]}], "-", 
+   SubscriptBox["\[Tau]", "ee"], "-", 
+   RowBox[{
+    SubscriptBox["J", "ei"], " ", 
+    SubscriptBox["J", "ie"], " ", 
+    SubscriptBox["\[Tau]", "ee"]}], "-", 
+   RowBox[{
+    SubscriptBox["J", "ii"], " ", 
+    SubscriptBox["\[Tau]", "ee"]}], "-", 
+   SubscriptBox["\[Tau]", "ei"], "+", 
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ei"]}], "-", 
+   RowBox[{
+    SubscriptBox["J", "ii"], " ", 
+    SubscriptBox["\[Tau]", "ei"]}], "+", 
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["J", "ii"], " ", 
+    SubscriptBox["\[Tau]", "ei"]}], "-", 
+   SubscriptBox["\[Tau]", "i"], "+", 
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["\[Tau]", "i"]}], "-", 
+   SubscriptBox["\[Tau]", "ie"], "+", 
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ie"]}], "-", 
+   RowBox[{
+    SubscriptBox["J", "ii"], " ", 
+    SubscriptBox["\[Tau]", "ie"]}], "+", 
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["J", "ii"], " ", 
+    SubscriptBox["\[Tau]", "ie"]}], "-", 
+   SubscriptBox["\[Tau]", "ii"], "+", 
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["\[Tau]", "ii"]}], "-", 
+   RowBox[{
+    SubscriptBox["J", "ei"], " ", 
+    SubscriptBox["J", "ie"], " ", 
+    SubscriptBox["\[Tau]", "ii"]}]}], 
+  RowBox[{
+   RowBox[{"-", "1"}], "+", 
+   SubscriptBox["J", "ee"], "-", 
+   RowBox[{
+    SubscriptBox["J", "ei"], " ", 
+    SubscriptBox["J", "ie"]}], "-", 
+   SubscriptBox["J", "ii"], "+", 
+   RowBox[{
+    SubscriptBox["J", "ee"], " ", 
+    SubscriptBox["J", "ii"]}]}]]], "Output",
+ CellChangeTimes->{
+  3.603217818367592*^9, 3.603217917406657*^9, 3.603218407746258*^9, {
+   3.603218672047028*^9, 3.603218707068367*^9}, 3.60321874097297*^9, 
+   3.6032188626335278`*^9, 3.6032190954383*^9, {3.603219279664949*^9, 
+   3.6032192949188633`*^9}, {3.603219357065336*^9, 3.603219375201768*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"g", " ", "=", " ", 
+  RowBox[{"CoefficientRules", "[", 
+   RowBox[{
+    RowBox[{"Numerator", "[", "l", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox["J", "ee"], ",", 
+      SubscriptBox["J", "ii"], ",", 
+      SubscriptBox["J", "ei"], ",", 
+      SubscriptBox["J", "ie"]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6032089223142147`*^9, 3.603208958066394*^9}, {
+  3.603209871844845*^9, 3.603209890801149*^9}, {3.6032106936804543`*^9, 
+  3.603210698438025*^9}, {3.603211757304545*^9, 3.603211757753666*^9}, {
+  3.603217836278541*^9, 3.6032178376453114`*^9}, {3.603219184825904*^9, 
+  3.603219189454686*^9}, {3.60321928323952*^9, 3.6032192852765503`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1", ",", "0", ",", "0"}], "}"}], "\[Rule]", 
+    RowBox[{
+     SubscriptBox["\[Tau]", "ei"], "+", 
+     SubscriptBox["\[Tau]", "ie"]}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0", ",", "0", ",", "0"}], "}"}], "\[Rule]", 
+    RowBox[{
+     SubscriptBox["\[Tau]", "ei"], "+", 
+     SubscriptBox["\[Tau]", "i"], "+", 
+     SubscriptBox["\[Tau]", "ie"], "+", 
+     SubscriptBox["\[Tau]", "ii"]}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "1", ",", "0", ",", "0"}], "}"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{"-", 
+      SubscriptBox["\[Tau]", "e"]}], "-", 
+     SubscriptBox["\[Tau]", "ee"], "-", 
+     SubscriptBox["\[Tau]", "ei"], "-", 
+     SubscriptBox["\[Tau]", "ie"]}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "1", ",", "1"}], "}"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{"-", 
+      SubscriptBox["\[Tau]", "ee"]}], "-", 
+     SubscriptBox["\[Tau]", "ii"]}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}], "\[Rule]", 
+    RowBox[{
+     RowBox[{"-", 
+      SubscriptBox["\[Tau]", "e"]}], "-", 
+     SubscriptBox["\[Tau]", "ee"], "-", 
+     SubscriptBox["\[Tau]", "ei"], "-", 
+     SubscriptBox["\[Tau]", "i"], "-", 
+     SubscriptBox["\[Tau]", "ie"], "-", 
+     SubscriptBox["\[Tau]", "ii"]}]}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.603208960096521*^9, {3.603209877089633*^9, 3.603209891704583*^9}, 
+   3.603210699583314*^9, {3.603211759110332*^9, 3.603211780033655*^9}, 
+   3.603212158404076*^9, 3.603217840110058*^9, 3.6032179174177437`*^9, 
+   3.603218407932432*^9, {3.603218672229209*^9, 3.603218707225272*^9}, 
+   3.603218741055212*^9, 3.6032188627115793`*^9, 3.6032190954466543`*^9, 
+   3.603219294924621*^9, {3.603219357225863*^9, 3.603219375367494*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"d", " ", "=", " ", 
+  RowBox[{"CoefficientRules", "[", 
+   RowBox[{
+    RowBox[{"Denominator", "[", "l", "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      SubscriptBox["J", "ee"], ",", 
+      SubscriptBox["J", "ie"], ",", 
+      SubscriptBox["J", "ii"], ",", 
+      SubscriptBox["J", "ei"]}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.603209099325973*^9, 3.603209121801056*^9}, {
+  3.603209151903428*^9, 3.603209186515751*^9}, {3.603209219729991*^9, 
+  3.60320925819522*^9}, {3.603209541113908*^9, 3.603209559911109*^9}, {
+  3.60320981028764*^9, 3.6032098476431417`*^9}, {3.603211077712076*^9, 
+  3.60321111046308*^9}, {3.603213871346427*^9, 3.603213879256267*^9}, {
+  3.603217690614387*^9, 3.603217696405299*^9}, {3.603217756862175*^9, 
+  3.603217758013958*^9}, {3.6032178441700993`*^9, 3.603217845321291*^9}, {
+  3.603219123970772*^9, 3.6032191260573874`*^9}, {3.603219288206633*^9, 
+  3.603219290211587*^9}, {3.6032193500429707`*^9, 3.603219351153099*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0", ",", "1", ",", "0"}], "}"}], "\[Rule]", "1"}], 
+   ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0", ",", "0", ",", "0"}], "}"}], "\[Rule]", "1"}], 
+   ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "1", ",", "0", ",", "1"}], "}"}], "\[Rule]", 
+    RowBox[{"-", "1"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "1", ",", "0"}], "}"}], "\[Rule]", 
+    RowBox[{"-", "1"}]}], ",", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "0", ",", "0"}], "}"}], "\[Rule]", 
+    RowBox[{"-", "1"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.60321216227277*^9, 3.603213879815392*^9, 3.603217759837792*^9, 
+   3.603217847832822*^9, 3.603217917577767*^9, 3.603218408120064*^9, {
+   3.603218672328776*^9, 3.60321870736152*^9}, 3.603218741143497*^9, 
+   3.6032188627785263`*^9, 3.603219095567443*^9, 3.603219129570465*^9, 
+   3.603219218668248*^9, 3.6032192950616417`*^9, {3.603219357389432*^9, 
+   3.6032193755319138`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FromCoefficientRules", "[", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{"g", ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{
+         RowBox[{"ReplaceAll", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"Rule", "\[Rule]", "List"}]}], "]"}], "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ">", "1"}], " ", "&"}]}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["J", "ee"], ",", 
+     SubscriptBox["J", "ii"], ",", 
+     SubscriptBox["J", "ei"], ",", 
+     SubscriptBox["J", "ie"]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{
+  3.603211767642847*^9, {3.6032161594735737`*^9, 3.60321621549654*^9}, {
+   3.6032163540898333`*^9, 3.603216359492032*^9}, {3.603216407073923*^9, 
+   3.603216411206656*^9}, {3.6032166577236757`*^9, 3.6032166796686087`*^9}, {
+   3.603216725931427*^9, 3.6032168154724693`*^9}, {3.6032168687195997`*^9, 
+   3.603216869553233*^9}, {3.603217346788118*^9, 3.603217410842922*^9}, {
+   3.6032175026888323`*^9, 3.603217521008564*^9}, {3.603217604935484*^9, 
+   3.60321764508877*^9}, {3.603217852591063*^9, 3.603217854122121*^9}, {
+   3.603218387327285*^9, 3.603218394081007*^9}, 3.603218451721314*^9, {
+   3.603218616855583*^9, 3.6032186209583797`*^9}, {3.603218676919242*^9, 
+   3.603218703978692*^9}, {3.6032187356588573`*^9, 3.6032187375895443`*^9}, {
+   3.6032188905831623`*^9, 3.603218915401002*^9}, {3.6032190071336412`*^9, 
+   3.6032190087919827`*^9}, {3.6032191397793617`*^9, 
+   3.6032191405177383`*^9}, {3.6032191720199547`*^9, 3.603219208756638*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   SubscriptBox["J", "ee"], " ", 
+   SubscriptBox["J", "ii"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     SubscriptBox["\[Tau]", "ei"], "+", 
+     SubscriptBox["\[Tau]", "ie"]}], ")"}]}], "+", 
+  RowBox[{
+   SubscriptBox["J", "ei"], " ", 
+   SubscriptBox["J", "ie"], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"-", 
+      SubscriptBox["\[Tau]", "ee"]}], "-", 
+     SubscriptBox["\[Tau]", "ii"]}], ")"}]}]}]], "Output",
+ CellChangeTimes->{
+  3.6032168706773*^9, {3.60321736165514*^9, 3.603217411546259*^9}, {
+   3.60321750627811*^9, 3.603217522246889*^9}, 3.603217605877824*^9, 
+   3.603217646591084*^9, 3.603217855306601*^9, 3.603217917587871*^9, 
+   3.6032184081318693`*^9, 3.603218621604658*^9, {3.603218672443725*^9, 
+   3.6032187075117207`*^9}, 3.603218741230691*^9, 3.603218862839202*^9, {
+   3.60321889654527*^9, 3.60321891611191*^9}, 3.60321909557882*^9, 
+   3.603219141266904*^9, 3.603219211106181*^9, 3.6032192952084427`*^9, {
+   3.603219357536148*^9, 3.603219375542919*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"FromCoefficientRules", "[", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{"d", ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{
+         RowBox[{"ReplaceAll", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"Rule", "\[Rule]", "List"}]}], "]"}], "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "]"}], ">", "1"}], " ", "&"}]}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     SubscriptBox["J", "ee"], ",", 
+     SubscriptBox["J", "ie"], ",", 
+     SubscriptBox["J", "ii"], ",", 
+     SubscriptBox["J", "ei"]}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.603217769601367*^9, 3.60321777588198*^9}, 
+   3.603217811232923*^9, {3.6032183986321697`*^9, 3.603218401033205*^9}, 
+   3.603218461806498*^9, {3.603219011941265*^9, 3.603219013438354*^9}, {
+   3.603219145147287*^9, 3.603219145606642*^9}, {3.603219371303254*^9, 
+   3.603219372094811*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", 
+    SubscriptBox["J", "ei"]}], " ", 
+   SubscriptBox["J", "ie"]}], "+", 
+  RowBox[{
+   SubscriptBox["J", "ee"], " ", 
+   SubscriptBox["J", "ii"]}]}]], "Output",
+ CellChangeTimes->{{3.603218862898881*^9, 3.603218870850761*^9}, 
+   3.6032190957224817`*^9, 3.603219146213113*^9, 3.603219225636252*^9, 
+   3.6032192952187033`*^9, {3.6032193576724367`*^9, 3.603219375759447*^9}}]
+}, Open  ]]
+},
+WindowSize->{1558, 953},
+WindowMargins->{{Automatic, 74}, {Automatic, 0}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2310, 63, 55, "Input"],
+Cell[2892, 87, 21708, 643, 448, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24637, 735, 372, 7, 32, "Input"],
+Cell[25012, 744, 20816, 629, 448, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45865, 1378, 442, 10, 32, "Input"],
+Cell[46310, 1390, 2083, 64, 51, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48430, 1459, 704, 15, 32, "Input"],
+Cell[49137, 1476, 1886, 50, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51060, 1531, 992, 19, 32, "Input"],
+Cell[52055, 1552, 1079, 29, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53171, 1586, 1579, 33, 32, "Input"],
+Cell[54753, 1621, 1022, 25, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55812, 1651, 917, 24, 32, "Input"],
+Cell[56732, 1677, 426, 11, 32, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

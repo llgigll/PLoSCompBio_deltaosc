@@ -1,0 +1,668 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     21745,        659]
+NotebookOptionsPosition[     21200,        635]
+NotebookOutlinePosition[     21537,        650]
+CellTagsIndexPosition[     21494,        647]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"a", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", "0", ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox["J", "Aee"], 
+         SubscriptBox["x", "1"]}], ")"}], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox["J", "Nee"], 
+         SubscriptBox["x", "2"]}], ")"}], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["J", "ei"]}], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", "0", ",", 
+      RowBox[{
+       SubscriptBox["J", "Aee"], 
+       RowBox[{
+        SubscriptBox["R", "e"], "/", 
+        SubscriptBox["\[Tau]", "e"]}]}], ",", 
+      RowBox[{
+       SubscriptBox["J", "Nee"], 
+       RowBox[{
+        SubscriptBox["R", "e"], "/", 
+        SubscriptBox["\[Tau]", "e"]}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "i"]}], ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox["J", "Aie"], 
+         SubscriptBox["x", "2"]}], ")"}], "/", 
+       SubscriptBox["\[Tau]", "i"]}], ",", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SubscriptBox["J", "Nie"], 
+         SubscriptBox["x", "1"]}], ")"}], "/", 
+       SubscriptBox["\[Tau]", "i"]}], ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["J", "ii"]}], "/", 
+       SubscriptBox["\[Tau]", "i"]}], ",", 
+      RowBox[{
+       SubscriptBox["J", "Nie"], 
+       RowBox[{
+        SubscriptBox["R", "i"], "/", 
+        SubscriptBox["\[Tau]", "i"]}]}], ",", 
+      RowBox[{
+       SubscriptBox["J", "Aie"], 
+       RowBox[{
+        SubscriptBox["R", "i"], "/", 
+        SubscriptBox["\[Tau]", "i"]}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", 
+       SubscriptBox["\[Tau]", "Ae"]}], ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "Ae"]}], ",", "0", ",", "0", ",", "0", ",", "0",
+       ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", " ", 
+       SubscriptBox["\[Tau]", "Ne"]}], ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", " ", 
+       SubscriptBox["\[Tau]", "Ne"]}], ",", "0", ",", "0", ",", "0", ",", "0",
+       ",", "0", ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", " ", 
+       SubscriptBox["\[Tau]", "Ae"]}], ",", "0", ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", " ", 
+       SubscriptBox["\[Tau]", "Ae"]}], ",", "0", ",", "0", ",", "0", ",", "0",
+       ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", " ", 
+       SubscriptBox["\[Tau]", "Ne"]}], ",", "0", ",", "0", ",", "0", ",", "0",
+       ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", " ", 
+       SubscriptBox["\[Tau]", "Ne"]}], ",", "0", ",", "0", ",", "0", ",", 
+      "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", 
+      RowBox[{"1", "/", 
+       SubscriptBox["\[Tau]", "G"]}], ",", "0", ",", "0", ",", "0", ",", "0", 
+      ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "G"]}], ",", "0", ",", "0", ",", "0"}], "}"}], 
+    ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", 
+      RowBox[{"1", "/", 
+       SubscriptBox["\[Tau]", "G"]}], ",", "0", ",", "0", ",", "0", ",", "0", 
+      ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "G"]}], ",", "0", ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["U", "1"]}], "*", 
+       SubscriptBox["x", "1"]}], ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+      "0", ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "/", 
+        SubscriptBox["\[Tau]", "r1"]}], "-", 
+       RowBox[{
+        SubscriptBox["U", "1"], "*", 
+        SubscriptBox["R", "e"]}]}], ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["U", "2"]}], "*", 
+       SubscriptBox["x", "2"]}], ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+      "0", ",", "0", ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", "1"}], "/", 
+        SubscriptBox["\[Tau]", "r2"]}], "-", 
+       RowBox[{
+        SubscriptBox["U", "2"], "*", 
+        SubscriptBox["R", "e"]}]}]}], "}"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.603220836306795*^9, 3.60322085143539*^9}, {
+   3.603220896708033*^9, 3.603220950176195*^9}, {3.603220997525188*^9, 
+   3.603221178783764*^9}, {3.603221227436592*^9, 3.603221276419098*^9}, {
+   3.6032213513490067`*^9, 3.603221357358178*^9}, {3.603221422681528*^9, 
+   3.603221573792983*^9}, {3.603221625041174*^9, 3.60322162571343*^9}, {
+   3.668343968526413*^9, 3.668343997877817*^9}, {3.668344048866685*^9, 
+   3.6683441000060863`*^9}, {3.66834414474387*^9, 3.66834426222832*^9}, 
+   3.6683442945465927`*^9, {3.668350340632402*^9, 3.668350371193697*^9}, {
+   3.668354109734338*^9, 3.668354249032893*^9}, {3.668354313073819*^9, 
+   3.6683543236598186`*^9}, {3.6683572881971703`*^9, 
+   3.6683573003094597`*^9}, {3.66835733224037*^9, 3.668357343791523*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "e"]]}], ",", "0", ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Aee"], " ", 
+       SubscriptBox["x", "1"]}], 
+      SubscriptBox["\[Tau]", "e"]], ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Nee"], " ", 
+       SubscriptBox["x", "2"]}], 
+      SubscriptBox["\[Tau]", "e"]], ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox[
+       SubscriptBox["J", "ei"], 
+       SubscriptBox["\[Tau]", "e"]]}], ",", "0", ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Aee"], " ", 
+       SubscriptBox["R", "e"]}], 
+      SubscriptBox["\[Tau]", "e"]], ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Nee"], " ", 
+       SubscriptBox["R", "e"]}], 
+      SubscriptBox["\[Tau]", "e"]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "i"]]}], ",", "0", ",", "0", ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Aie"], " ", 
+       SubscriptBox["x", "2"]}], 
+      SubscriptBox["\[Tau]", "i"]], ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Nie"], " ", 
+       SubscriptBox["x", "1"]}], 
+      SubscriptBox["\[Tau]", "i"]], ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox[
+       SubscriptBox["J", "ii"], 
+       SubscriptBox["\[Tau]", "i"]]}], ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Nie"], " ", 
+       SubscriptBox["R", "i"]}], 
+      SubscriptBox["\[Tau]", "i"]], ",", 
+     FractionBox[
+      RowBox[{
+       SubscriptBox["J", "Aie"], " ", 
+       SubscriptBox["R", "i"]}], 
+      SubscriptBox["\[Tau]", "i"]]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Ae"]], ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ae"]]}], ",", "0", ",", "0", ",", "0", ",", 
+     "0", ",", "0", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Ne"]], ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ne"]]}], ",", "0", ",", "0", ",", "0", ",", 
+     "0", ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Ae"]], ",", "0", ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ae"]]}], ",", "0", ",", "0", ",", "0", ",", 
+     "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Ne"]], ",", "0", ",", "0", ",", "0", ",", "0", 
+     ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ne"]]}], ",", "0", ",", "0", ",", "0", ",", 
+     "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "G"]], ",", "0", ",", "0", ",", "0", ",", "0", 
+     ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "G"]]}], ",", "0", ",", "0", ",", "0"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "G"]], ",", "0", ",", "0", ",", "0", ",", "0", 
+     ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "G"]]}], ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       SubscriptBox["U", "1"]}], " ", 
+      SubscriptBox["x", "1"]}], ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+     "0", ",", "0", ",", "0", ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["R", "e"]}], " ", 
+       SubscriptBox["U", "1"]}], "-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "r1"]]}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       SubscriptBox["U", "2"]}], " ", 
+      SubscriptBox["x", "2"]}], ",", "0", ",", "0", ",", "0", ",", "0", ",", 
+     "0", ",", "0", ",", "0", ",", "0", ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["R", "e"]}], " ", 
+       SubscriptBox["U", "2"]}], "-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "r2"]]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.668344299843554*^9, 3.66835425320604*^9, 
+  3.66835432475428*^9, 3.668357346374126*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixForm", "[", "a", "]"}]], "Input",
+ CellChangeTimes->{{3.603221634825858*^9, 3.603221635559389*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "e"]]}], "0", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Aee"], " ", 
+        SubscriptBox["x", "1"]}], 
+       SubscriptBox["\[Tau]", "e"]], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Nee"], " ", 
+        SubscriptBox["x", "2"]}], 
+       SubscriptBox["\[Tau]", "e"]], "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        SubscriptBox["J", "ei"], 
+        SubscriptBox["\[Tau]", "e"]]}], "0", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Aee"], " ", 
+        SubscriptBox["R", "e"]}], 
+       SubscriptBox["\[Tau]", "e"]], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Nee"], " ", 
+        SubscriptBox["R", "e"]}], 
+       SubscriptBox["\[Tau]", "e"]]},
+     {"0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "i"]]}], "0", "0", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Aie"], " ", 
+        SubscriptBox["x", "2"]}], 
+       SubscriptBox["\[Tau]", "i"]], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Nie"], " ", 
+        SubscriptBox["x", "1"]}], 
+       SubscriptBox["\[Tau]", "i"]], "0", 
+      RowBox[{"-", 
+       FractionBox[
+        SubscriptBox["J", "ii"], 
+        SubscriptBox["\[Tau]", "i"]]}], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Nie"], " ", 
+        SubscriptBox["R", "i"]}], 
+       SubscriptBox["\[Tau]", "i"]], 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["J", "Aie"], " ", 
+        SubscriptBox["R", "i"]}], 
+       SubscriptBox["\[Tau]", "i"]]},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ae"]], "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Ae"]]}], "0", "0", "0", "0", "0", "0", "0"},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ne"]], "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Ne"]]}], "0", "0", "0", "0", "0", "0"},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ae"]], "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Ae"]]}], "0", "0", "0", "0", "0"},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Ne"]], "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Ne"]]}], "0", "0", "0", "0"},
+     {"0", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "G"]], "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "G"]]}], "0", "0", "0"},
+     {"0", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "G"]], "0", "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "G"]]}], "0", "0"},
+     {
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["U", "1"]}], " ", 
+       SubscriptBox["x", "1"]}], "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         SubscriptBox["R", "e"]}], " ", 
+        SubscriptBox["U", "1"]}], "-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "r1"]]}], "0"},
+     {
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["U", "2"]}], " ", 
+       SubscriptBox["x", "2"]}], "0", "0", "0", "0", "0", "0", "0", "0", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"-", 
+         SubscriptBox["R", "e"]}], " ", 
+        SubscriptBox["U", "2"]}], "-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "r2"]]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.603221583051914*^9, {3.603221628740117*^9, 3.603221636398531*^9}, 
+   3.6037430424546547`*^9, 3.6683442753098507`*^9, 3.668344305853209*^9, 
+   3.668354256315827*^9, 3.6683543273080473`*^9, 3.668357346854747*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Together", "[", 
+  RowBox[{"Collect", "[", 
+   RowBox[{
+    RowBox[{"CharacteristicPolynomial", "[", 
+     RowBox[{"a", ",", "x"}], "]"}], ",", "x"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.603743023859486*^9, 3.603743031859611*^9}, {
+  3.603743462088427*^9, 3.603743483906117*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   PanelBox[GridBox[{
+      {
+       StyleBox[
+        StyleBox[
+         DynamicBox[ToBoxes[
+           FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+           StandardForm],
+          ImageSizeCache->{367., {2., 8.}}],
+         StripOnInput->False,
+         DynamicUpdating->True], "Panel",
+        StripOnInput->False,
+        Background->None]},
+      {
+       ItemBox[
+        TagBox[
+         FractionBox[
+          RowBox[{"1", "+", 
+           RowBox[{"\[LeftSkeleton]", "3165", "\[RightSkeleton]"}], "+", 
+           RowBox[{
+            SuperscriptBox["x", "9"], " ", 
+            SubscriptBox["R", "e"], " ", 
+            SubscriptBox["U", "2"], " ", 
+            SubsuperscriptBox["\[Tau]", "Ae", "2"], " ", 
+            SubscriptBox["\[Tau]", "e"], " ", 
+            SubsuperscriptBox["\[Tau]", "G", "2"], " ", 
+            SubscriptBox["\[Tau]", "i"], " ", 
+            SubsuperscriptBox["\[Tau]", "Ne", "2"], " ", 
+            SubscriptBox["\[Tau]", "r1"], " ", 
+            SubscriptBox["\[Tau]", "r2"]}], "+", 
+           RowBox[{
+            SuperscriptBox["x", "8"], " ", 
+            SubsuperscriptBox["R", "e", "2"], " ", 
+            SubscriptBox["U", "1"], " ", 
+            SubscriptBox["U", "2"], " ", 
+            SubsuperscriptBox["\[Tau]", "Ae", "2"], " ", 
+            SubscriptBox["\[Tau]", "e"], " ", 
+            SubsuperscriptBox["\[Tau]", "G", "2"], " ", 
+            SubscriptBox["\[Tau]", "i"], " ", 
+            SubsuperscriptBox["\[Tau]", "Ne", "2"], " ", 
+            SubscriptBox["\[Tau]", "r1"], " ", 
+            SubscriptBox["\[Tau]", "r2"]}]}], 
+          RowBox[{
+           SubsuperscriptBox["\[Tau]", "Ae", "2"], " ", 
+           SubscriptBox["\[Tau]", "e"], " ", 
+           SubsuperscriptBox["\[Tau]", "G", "2"], " ", 
+           SubscriptBox["\[Tau]", "i"], " ", 
+           SubsuperscriptBox["\[Tau]", "Ne", "2"], " ", 
+           SubscriptBox["\[Tau]", "r1"], " ", 
+           SubscriptBox["\[Tau]", "r2"]}]],
+         Short[#, 
+          Rational[5, 2]]& ],
+        Background->GrayLevel[1],
+        BaseStyle->{Deployed -> False},
+        Frame->True,
+        FrameStyle->GrayLevel[0, 0.2],
+        StripOnInput->False]},
+      {
+       RowBox[{
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+             StandardForm],
+            ImageSizeCache->{63., {0., 8.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>OutputSizeLimit`ButtonFunction[
+          Identity, 109, 28374109110741045409, Rational[5, 2]/2],
+         Enabled->True,
+         Evaluator->Automatic,
+         Method->"Queued"], "\[ThinSpace]", 
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+             StandardForm],
+            ImageSizeCache->{67., {0., 8.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>OutputSizeLimit`ButtonFunction[
+          Identity, 109, 28374109110741045409, Rational[5, 2] 2],
+         Enabled->True,
+         Evaluator->Automatic,
+         Method->"Queued"], "\[ThinSpace]", 
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+             StandardForm],
+            ImageSizeCache->{104., {2., 8.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>OutputSizeLimit`ButtonFunction[
+          Identity, 109, 28374109110741045409, Infinity],
+         Enabled->True,
+         Evaluator->Automatic,
+         Method->"Queued"], "\[ThinSpace]", 
+        ButtonBox[
+         StyleBox[
+          StyleBox[
+           DynamicBox[ToBoxes[
+             FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+             StandardForm],
+            ImageSizeCache->{97., {0., 8.}}],
+           StripOnInput->False,
+           DynamicUpdating->True], "Panel",
+          StripOnInput->False,
+          Background->None],
+         Appearance->Automatic,
+         ButtonFunction:>FrontEndExecute[{
+            FrontEnd`SetOptions[
+            FrontEnd`$FrontEnd, 
+             FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+            FrontEnd`FrontEndToken["PreferencesDialog"]}],
+         Evaluator->None,
+         Method->"Preemptive"]}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], {
+          Offset[1.2]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    DefaultBaseStyle->{},
+    FrameMargins->5],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[109]]], "Output",
+ CellChangeTimes->{{3.6037430330180893`*^9, 3.6037430425730124`*^9}, 
+   3.603743485274583*^9, 3.668344505917452*^9, 3.66835735103963*^9}]
+}, Open  ]]
+},
+WindowSize->{1287, 844},
+WindowMargins->{{40, Automatic}, {38, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 5461, 154, 121, "Input"],
+Cell[6043, 178, 4468, 140, 184, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10548, 323, 150, 3, 32, "Input"],
+Cell[10701, 328, 4322, 135, 341, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15060, 468, 313, 7, 32, "Input"],
+Cell[15376, 477, 5808, 155, 134, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

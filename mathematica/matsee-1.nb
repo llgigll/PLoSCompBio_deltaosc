@@ -1,0 +1,314 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      9506,        305]
+NotebookOptionsPosition[      9084,        285]
+NotebookOutlinePosition[      9421,        300]
+CellTagsIndexPosition[      9378,        297]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"a", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", "0", ",", 
+      RowBox[{
+       SubscriptBox["J", "Aee"], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", 
+      RowBox[{
+       SubscriptBox["J", "Nee"], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["J", "ei"]}], "/", 
+       SubscriptBox["\[Tau]", "e"]}], ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "i"]}], ",", "0", ",", "0", ",", 
+      RowBox[{
+       SubscriptBox["J", "Aie"], "/", 
+       SubscriptBox["\[Tau]", "i"]}], ",", 
+      RowBox[{
+       SubscriptBox["J", "Nie"], "/", 
+       SubscriptBox["\[Tau]", "i"]}], ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", 
+        SubscriptBox["J", "ii"]}], "/", 
+       SubscriptBox["\[Tau]", "i"]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", 
+       SubscriptBox["\[Tau]", "Aee"]}], ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "Aee"]}], ",", "0", ",", "0", ",", "0", ",", 
+      "0", ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", " ", 
+       SubscriptBox["\[Tau]", "Nee"]}], ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", " ", 
+       SubscriptBox["\[Tau]", "Nee"]}], ",", "0", ",", "0", ",", "0", ",", 
+      "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", " ", 
+       SubscriptBox["\[Tau]", "Aie"]}], ",", "0", ",", "0", ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", " ", 
+       SubscriptBox["\[Tau]", "Aie"]}], ",", "0", ",", "0", ",", "0"}], "}"}],
+     ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", " ", 
+       SubscriptBox["\[Tau]", "Nie"]}], ",", "0", ",", "0", ",", "0", ",", 
+      "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", " ", 
+       SubscriptBox["\[Tau]", "Nie"]}], ",", "0", ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", 
+      RowBox[{"1", "/", 
+       SubscriptBox["\[Tau]", "ei"]}], ",", "0", ",", "0", ",", "0", ",", "0",
+       ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "ei"]}], ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", 
+      RowBox[{"1", "/", 
+       SubscriptBox["\[Tau]", "ii"]}], ",", "0", ",", "0", ",", "0", ",", "0",
+       ",", "0", ",", 
+      RowBox[{
+       RowBox[{"-", "1"}], "/", 
+       SubscriptBox["\[Tau]", "ii"]}]}], "}"}]}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.603220836306795*^9, 3.60322085143539*^9}, {
+  3.603220896708033*^9, 3.603220950176195*^9}, {3.603220997525188*^9, 
+  3.603221178783764*^9}, {3.603221227436592*^9, 3.603221276419098*^9}, {
+  3.6032213513490067`*^9, 3.603221357358178*^9}, {3.603221422681528*^9, 
+  3.603221573792983*^9}, {3.603221625041174*^9, 3.60322162571343*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "e"]]}], ",", "0", ",", 
+     FractionBox[
+      SubscriptBox["J", "Aee"], 
+      SubscriptBox["\[Tau]", "e"]], ",", 
+     FractionBox[
+      SubscriptBox["J", "Nee"], 
+      SubscriptBox["\[Tau]", "e"]], ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox[
+       SubscriptBox["J", "ei"], 
+       SubscriptBox["\[Tau]", "e"]]}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "i"]]}], ",", "0", ",", "0", ",", 
+     FractionBox[
+      SubscriptBox["J", "Aie"], 
+      SubscriptBox["\[Tau]", "i"]], ",", 
+     FractionBox[
+      SubscriptBox["J", "Nie"], 
+      SubscriptBox["\[Tau]", "i"]], ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox[
+       SubscriptBox["J", "ii"], 
+       SubscriptBox["\[Tau]", "i"]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Aee"]], ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Aee"]]}], ",", "0", ",", "0", ",", "0", ",", 
+     "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Nee"]], ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Nee"]]}], ",", "0", ",", "0", ",", "0", ",", 
+     "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Aie"]], ",", "0", ",", "0", ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Aie"]]}], ",", "0", ",", "0", ",", "0"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "Nie"]], ",", "0", ",", "0", ",", "0", ",", "0", 
+     ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Nie"]]}], ",", "0", ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "ei"]], ",", "0", ",", "0", ",", "0", ",", "0", 
+     ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "ei"]]}], ",", "0"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", 
+     FractionBox["1", 
+      SubscriptBox["\[Tau]", "ii"]], ",", "0", ",", "0", ",", "0", ",", "0", 
+     ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "ii"]]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.603221574883376*^9, 3.603221626809597*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MatrixForm", "[", "a", "]"}]], "Input",
+ CellChangeTimes->{{3.603221634825858*^9, 3.603221635559389*^9}},
+ NumberMarks->False],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "e"]]}], "0", 
+      FractionBox[
+       SubscriptBox["J", "Aee"], 
+       SubscriptBox["\[Tau]", "e"]], 
+      FractionBox[
+       SubscriptBox["J", "Nee"], 
+       SubscriptBox["\[Tau]", "e"]], "0", "0", 
+      RowBox[{"-", 
+       FractionBox[
+        SubscriptBox["J", "ei"], 
+        SubscriptBox["\[Tau]", "e"]]}], "0"},
+     {"0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "i"]]}], "0", "0", 
+      FractionBox[
+       SubscriptBox["J", "Aie"], 
+       SubscriptBox["\[Tau]", "i"]], 
+      FractionBox[
+       SubscriptBox["J", "Nie"], 
+       SubscriptBox["\[Tau]", "i"]], "0", 
+      RowBox[{"-", 
+       FractionBox[
+        SubscriptBox["J", "ii"], 
+        SubscriptBox["\[Tau]", "i"]]}]},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Aee"]], "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Aee"]]}], "0", "0", "0", "0", "0"},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Nee"]], "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Nee"]]}], "0", "0", "0", "0"},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Aie"]], "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Aie"]]}], "0", "0", "0"},
+     {
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "Nie"]], "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "Nie"]]}], "0", "0"},
+     {"0", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "ei"]], "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "ei"]]}], "0"},
+     {"0", 
+      FractionBox["1", 
+       SubscriptBox["\[Tau]", "ii"]], "0", "0", "0", "0", "0", 
+      RowBox[{"-", 
+       FractionBox["1", 
+        SubscriptBox["\[Tau]", "ii"]]}]}
+    },
+    GridBoxAlignment->{
+     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+      "RowsIndexed" -> {}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{
+  3.603221583051914*^9, {3.603221628740117*^9, 3.603221636398531*^9}}]
+}, Open  ]]
+},
+WindowSize->{1287, 844},
+WindowMargins->{{41, Automatic}, {34, Automatic}},
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 3082, 86, 77, "Input"],
+Cell[3664, 110, 2622, 81, 96, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6323, 196, 150, 3, 32, "Input"],
+Cell[6476, 201, 2592, 81, 338, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
